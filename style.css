@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: poppins, sans-serif;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-size: normal;
     text-decoration: none;
     scroll-behavior: smooth;
     list-style: none;
@@ -85,4 +89,97 @@ li a:hover::before {
 #menu-icon {
     display: none;
     font-size: 2rem;
+}
+
+section {
+    min-height: 100vh;
+    padding: 8rem 12%;
+    width: 100%;
+    position: relative;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.about img {
+    width: 30vw;
+    border-radius: 50%;
+    border: 5px solid rgb(0, 157, 255);
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.info-box h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    opacity: 0.8;
+    color: rgb(0, 157, 255);
+}
+
+.info-box h1 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.info-box span {
+    font-size: 2rem;
+    background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+    background-clip: text;
+    color: transparent;
+}
+
+.btn-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 3rem;
+    border: 2px solid black;
+    font-weight: 500;
+    cursor: pointer;
+    text-wrap: nowrap;
+    transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+    background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+    color: white;
+    border: none;
+}
+
+.socials {
+    display: flex;
+    gap: 2rem;
+}
+
+.socials i {
+    font-size: 1.5rem;
+    color: rgb(0, 157, 255);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.socials i:hover {
+    transform: scale(1.1);
+    color: rgb(255, 0, 255);
 }
