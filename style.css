@@ -82,6 +82,12 @@ li a:hover::before {
     background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
 }
 
+.visit-btn a {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
 .visit-btn:hover {
     transform: scale(1.03);
     background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
